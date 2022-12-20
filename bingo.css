@@ -1,0 +1,30 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+.box-result{
+  background-color: #b1bda8;
+  padding: 5px 10px;
+  width: 620px;
+}
+.box-result h1{
+  text-align: center;
+  color: white;
+  padding: 5px 10px;
+}
+.result{
+  background-color: white;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  font-size: 20px;
+  cursor: pointer;
+}
+.number{
+  padding: 10px 20px;
+}

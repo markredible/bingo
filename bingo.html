@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BINGO</title>
+  <link rel="stylesheet" href="bingo.css">
+</head>
+<body>
+  <div class="container">
+    <div class="picker">
+      <iframe src="https://pickerwheel.com/" frameborder="0" height="690" width="700"></iframe>
+    </div>
+    <div class="box-result">
+      <h1>BINGO</h1>
+      <div class="result">
+        <div class="B">
+          <h2>B</h2>
+          <div class="number" id="one" onclick="one()">1</div>
+          <div class="number" id="two" onclick="two()">2</div>
+          <div class="number" id="three" onclick="three()">3</div>
+          <div class="number" id="four" onclick="four()">4</div>
+          <div class="number" id="five" onclick="five()">5</div>
+          <div class="number" id="six" onclick="six()">6</div>
+          <div class="number" id="seven" onclick="seven()">7</div>
+          <div class="number" id="eight" onclick="eight()">8</div>
+          <div class="number" id="nine" onclick="nine()">9</div>
+          <div class="number" id="ten" onclick="ten()">10</div>
+          <div class="number" id="eleven" onclick="eleven()">11</div>
+          <div class="number" id="twelve" onclick="twelve()">12</div>
+          <div class="number" id="thirteen" onclick="thirteen()">13</div>
+          <div class="number" id="fourteen" onclick="fourteen()">14</div>
+          <div class="number" id="fifteen" onclick="fifteen()">15</div>
+        </div>
+        <div class="I">
+          <h2>I</h2>
+          <div class="number" id="sixteen" onclick="sixteen()">16</div>
+          <div class="number" id="seventeen" onclick="seventeen()">17</div>
+          <div class="number" id="eightteen" onclick="eightteen()">18</div>
+          <div class="number" id="nineteen" onclick="nineteen()">19</div>
+          <div class="number" id="twenty" onclick="twenty()">20</div>
+          <div class="number"id="twentyone" onclick="twentyone()">21</div>
+          <div class="number" id="twentytwo" onclick="twentytwo()">22</div>
+          <div class="number" id="twentythree" onclick="twentythree()">23</div>
+          <div class="number" id="twentyfour" onclick="twentyfour()">24</div>
+          <div class="number" id="twentyfive" onclick="twentyfive()">25</div>
+          <div class="number" id="twentysix" onclick="twentysix()">26</div>
+          <div class="number" id="twentyseven" onclick="twentyseven()">27</div>
+          <div class="number" id="twentyeight" onclick="twentyeight()">28</div>
+          <div class="number" id="twentynine" onclick="twentynine()">29</div>
+          <div class="number" id="thirty" onclick="thirty()">30</div>
+        </div>
+        <div class="N">
+          <h2>N</h2>
+          <div class="number" id="thirtyone" onclick="thirtyone()">31</div>
+          <div class="number" id="thirtytwo" onclick="thirtytwo()">32</div>
+          <div class="number" id="thirtythree" onclick="thirtythree()">33</div>
+          <div class="number" id="thirtyfour" onclick="thirtyfour()">34</div>
+          <div class="number" id="thirtyfive" onclick="thirtyfive()">35</div>
+          <div class="number" id="thirtysix" onclick="thirtysix()">36</div>
+          <div class="number" id="thirtyseven" onclick="thirtyseven()">37</div>
+          <div class="number" id="thirtyeight" onclick="thirtyeight()">38</div>
+          <div class="number" id="thirtynine" onclick="thirtynine()">39</div>
+          <div class="number" id="fourty" onclick="fourty()">40</div>
+          <div class="number" id="fourtyone" onclick="fourtyone()">41</div>
+          <div class="number" id="fourtytwo" onclick="fourtytwo()">42</div>
+          <div class="number" id="fourtythree" onclick="fourtythree()">43</div>
+          <div class="number" id="fourtyfour" onclick="fourtyfour()">44</div>
+          <div class="number" id="fourtyfive" onclick="fourtyfive()">45</div>
+        </div>
+        <div class="G">
+          <h2>G</h2>
+          <div class="number" id="fourtysix" onclick="fourtysix()">46</div>
+          <div class="number" id="fourtyseven" onclick="fourtyseven()">47</div>
+          <div class="number" id="fourtyeight" onclick="fourtyeight()">48</div>
+          <div class="number" id="fourtynine" onclick="fourtynine()">49</div>
+          <div class="number" id="fifty" onclick="fifty()">50</div>
+          <div class="number" id="fiftyone" onclick="fiftyone()">51</div>
+          <div class="number" id="fiftytwo" onclick="fiftytwo()">52</div>
+          <div class="number" id="fiftythree" onclick="fiftythree()">53</div>
+          <div class="number" id="fiftyfour" onclick="fiftyfour()">54</div>
+          <div class="number" id="fiftyfive" onclick="fiftyfive()">55</div>
+          <div class="number" id="fiftysix" onclick="fiftysix()">56</div>
+          <div class="number" id="fiftyseven" onclick="fiftyseven()">57</div>
+          <div class="number" id="fiftyeight" onclick="fiftyeight()">58</div>
+          <div class="number" id="fiftynine" onclick="fiftynine()">59</div>
+          <div class="number" id="sixty" onclick="sixty()">60</div>
+        </div>
+        <div class="O">
+          <h2>O</h2>
+          <div class="number" id="sixtyone" onclick="sixtyone()">61</div>
+          <div class="number" id="sixtytwo" onclick="sixtytwo()">62</div>
+          <div class="number" id="sixtythree" onclick="sixtythree()">63</div>
+          <div class="number" id="sixtyfour" onclick="sixtyfour()">64</div>
+          <div class="number" id="sixtyfive" onclick="sixtyfive()">65</div>
+          <div class="number" id="sixtysix" onclick="sixtysix()">66</div>
+          <div class="number" id="sixtyseven" onclick="sixtyseven()">67</div>
+          <div class="number" id="sixtyeight" onclick="sixtyeight()">68</div>
+          <div class="number" id="sixtynine" onclick="sixtynine()">69</div>
+          <div class="number" id="seventy" onclick="seventy()">70</div>
+          <div class="number" id="seventyone" onclick="seventyone()">71</div>
+          <div class="number" id="seventytwo" onclick="seventytwo()">72</div>
+          <div class="number" id="seventythree" onclick="seventythree()">73</div>
+          <div class="number" id="seventyfour" onclick="seventyfour()">74</div>
+          <div class="number" id="seventyfive" onclick="seventyfive()">75</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function one(){
+      document.getElementById("one").style.backgroundColor="#b1bda8";
+    }
+    function two(){
+      document.getElementById("two").style.backgroundColor="#b1bda8";
+    }
+    function three(){
+      document.getElementById("three").style.backgroundColor="#b1bda8";
+    }
+    function four(){
+      document.getElementById("four").style.backgroundColor="#b1bda8";
+    }
+    function five(){
+      document.getElementById("five").style.backgroundColor="#b1bda8";
+    }
+    function six(){
+      document.getElementById("six").style.backgroundColor="#b1bda8";
+    }
+    function seven(){
+      document.getElementById("seven").style.backgroundColor="#b1bda8";
+    }
+    function eight(){
+      document.getElementById("eight").style.backgroundColor="#b1bda8";
+    }
+    function nine(){
+      document.getElementById("nine").style.backgroundColor="#b1bda8";
+    }
+    function ten(){
+      document.getElementById("ten").style.backgroundColor="#b1bda8";
+    }
+    function eleven(){
+      document.getElementById("eleven").style.backgroundColor="#b1bda8";
+    }
+    function twelve(){
+      document.getElementById("twelve").style.backgroundColor="#b1bda8";
+    }
+    function thirteen(){
+      document.getElementById("thirteen").style.backgroundColor="#b1bda8";
+    }
+    function fourteen(){
+      document.getElementById("fourteen").style.backgroundColor="#b1bda8";
+    }
+    function fifteen(){
+      document.getElementById("fifteen").style.backgroundColor="#b1bda8";
+    }
+
+    function sixteen(){
+      document.getElementById("sixteen").style.backgroundColor="#b1bda8";
+    }
+    function seventeen(){
+      document.getElementById("seventeen").style.backgroundColor="#b1bda8";
+    }
+    function eightteen(){
+      document.getElementById("eightteen").style.backgroundColor="#b1bda8";
+    }
+    function nineteen(){
+      document.getElementById("nineteen").style.backgroundColor="#b1bda8";
+    }
+    function twenty(){
+      document.getElementById("twenty").style.backgroundColor="#b1bda8";
+    }
+    function twentyone(){
+      document.getElementById("twentyone").style.backgroundColor="#b1bda8";
+    }
+    function twentytwo(){
+      document.getElementById("twentytwo").style.backgroundColor="#b1bda8";
+    }
+    function twentythree(){
+      document.getElementById("twentythree").style.backgroundColor="#b1bda8";
+    }
+    function twentyfour(){
+      document.getElementById("twentyfour").style.backgroundColor="#b1bda8";
+    }
+    function twentyfive(){
+      document.getElementById("twentyfive").style.backgroundColor="#b1bda8";
+    }
+    function twentysix(){
+      document.getElementById("twentysix").style.backgroundColor="#b1bda8";
+    }
+    function twentyseven(){
+      document.getElementById("twentyseven").style.backgroundColor="#b1bda8";
+    }
+    function twentyeight(){
+      document.getElementById("twentyeight").style.backgroundColor="#b1bda8";
+    }
+    function twentynine(){
+      document.getElementById("twentynine").style.backgroundColor="#b1bda8";
+    }
+    function thirty(){
+      document.getElementById("thirty").style.backgroundColor="#b1bda8";
+    }
+
+    function thirtyone(){
+      document.getElementById("thirtyone").style.backgroundColor="#b1bda8";
+    }
+    function thirtytwo(){
+      document.getElementById("thirtytwo").style.backgroundColor="#b1bda8";
+    }
+    function thirtythree(){
+      document.getElementById("thirtythree").style.backgroundColor="#b1bda8";
+    }
+    function thirtyfour(){
+      document.getElementById("thirtyfour").style.backgroundColor="#b1bda8";
+    }
+    function thirtyfive(){
+      document.getElementById("thirtyfive").style.backgroundColor="#b1bda8";
+    }
+    function thirtysix(){
+      document.getElementById("thirtysix").style.backgroundColor="#b1bda8";
+    }
+    function thirtyseven(){
+      document.getElementById("thirtyseven").style.backgroundColor="#b1bda8";
+    }
+    function thirtyeight(){
+      document.getElementById("thirtyeight").style.backgroundColor="#b1bda8";
+    }
+    function thirtynine(){
+      document.getElementById("thirtynine").style.backgroundColor="#b1bda8";
+    }
+    function fourty(){
+      document.getElementById("fourty").style.backgroundColor="#b1bda8";
+    }
+    function fourtyone(){
+      document.getElementById("fourtyone").style.backgroundColor="#b1bda8";
+    }
+    function fourtytwo(){
+      document.getElementById("fourtytwo").style.backgroundColor="#b1bda8";
+    }
+    function fourtythree(){
+      document.getElementById("fourtythree").style.backgroundColor="#b1bda8";
+    }
+    function fourtyfour(){
+      document.getElementById("fourtyfour").style.backgroundColor="#b1bda8";
+    }
+    function fourtyfive(){
+      document.getElementById("fourtyfive").style.backgroundColor="#b1bda8";
+    }
+
+    function fourtysix(){
+      document.getElementById("fourtysix").style.backgroundColor="#b1bda8";
+    }
+    function fourtyseven(){
+      document.getElementById("fourtyseven").style.backgroundColor="#b1bda8";
+    }
+    function fourtyeight(){
+      document.getElementById("fourtyeight").style.backgroundColor="#b1bda8";
+    }
+    function fourtynine(){
+      document.getElementById("fourtynine").style.backgroundColor="#b1bda8";
+    }
+    function fifty(){
+      document.getElementById("fifty").style.backgroundColor="#b1bda8";
+    }
+    function fiftyone(){
+      document.getElementById("fiftyone").style.backgroundColor="#b1bda8";
+    }
+    function fiftytwo(){
+      document.getElementById("fiftytwo").style.backgroundColor="#b1bda8";
+    }
+    function fiftythree(){
+      document.getElementById("fiftythree").style.backgroundColor="#b1bda8";
+    }
+    function fiftyfour(){
+      document.getElementById("fiftyfour").style.backgroundColor="#b1bda8";
+    }
+    function fiftyfive(){
+      document.getElementById("fiftyfive").style.backgroundColor="#b1bda8";
+    }
+    function fiftysix(){
+      document.getElementById("fiftysix").style.backgroundColor="#b1bda8";
+    }
+    function fiftyseven(){
+      document.getElementById("fiftyseven").style.backgroundColor="#b1bda8";
+    }
+    function fiftyeight(){
+      document.getElementById("fiftyeight").style.backgroundColor="#b1bda8";
+    }
+    function fiftynine(){
+      document.getElementById("fiftynine").style.backgroundColor="#b1bda8";
+    }
+    function sixty(){
+      document.getElementById("sixty").style.backgroundColor="#b1bda8";
+    }
+
+    function sixtyone(){
+      document.getElementById("sixtyone").style.backgroundColor="#b1bda8";
+    }
+    function sixtytwo(){
+      document.getElementById("sixtytwo").style.backgroundColor="#b1bda8";
+    }
+    function sixtythree(){
+      document.getElementById("sixtythree").style.backgroundColor="#b1bda8";
+    }
+    function sixtyfour(){
+      document.getElementById("sixtyfour").style.backgroundColor="#b1bda8";
+    }
+    function sixtyfive(){
+      document.getElementById("sixtyfive").style.backgroundColor="#b1bda8";
+    }
+    function sixtysix(){
+      document.getElementById("sixtysix").style.backgroundColor="#b1bda8";
+    }
+    function sixtyseven(){
+      document.getElementById("sixtyseven").style.backgroundColor="#b1bda8";
+    }
+    function sixtyeight(){
+      document.getElementById("sixtyeight").style.backgroundColor="#b1bda8";
+    }
+    function sixtynine(){
+      document.getElementById("sixtynine").style.backgroundColor="#b1bda8";
+    }
+    function seventy(){
+      document.getElementById("seventy").style.backgroundColor="#b1bda8";
+    }
+    function seventyone(){
+      document.getElementById("seventyone").style.backgroundColor="#b1bda8";
+    }
+    function seventytwo(){
+      document.getElementById("seventytwo").style.backgroundColor="#b1bda8";
+    }
+    function seventythree(){
+      document.getElementById("seventythree").style.backgroundColor="#b1bda8";
+    }
+    function seventyfour(){
+      document.getElementById("seventyfour").style.backgroundColor="#b1bda8";
+    }
+    function seventyfive(){
+      document.getElementById("seventyfive").style.backgroundColor="#b1bda8";
+    }
+  </script>
+</body>
+</html>
